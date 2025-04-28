@@ -6,12 +6,14 @@ class TriangleChecker:
         self.c = c
 
     def is_triangle(self) -> int:
-        if not isinstance(self.a, int | float) and not isinstance(self.b, int | float) and not isinstance(self.c, int | float):
+        if not all([type(x) in (int, float) and x > 0 for x in [self.a, self.b, self.c]]):
             return 1
-        elif a + b < c or a + c < b or c + b < a:
+        
+        a, b, c = self.a, self.b, self.c
+        if a + b < c or a + c < b or c + b < a:
             return 2
-        else:
-            return 3
+        
+        return 3
 
 
 
