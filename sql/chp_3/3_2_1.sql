@@ -1,0 +1,1 @@
+UPDATE doctors SET spec = 'невролог' WHERE doctor_num = 2;
