@@ -25,5 +25,5 @@ jobs:
     
     - name: Run Python linter (Pylint)
       run: |
-        pylint $(git ls-files '*.py') --fail-under=7.0  
+        pylint $(git ls-files '*.py')   
         
