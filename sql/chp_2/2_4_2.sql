@@ -1,8 +1,8 @@
 CREATE TABLE patients (
-    FULL_NAME VARCHAR(100),
-    SEX CHAR(1),
-    BIRTH_DATE DATE,
-    OMS_NUM BIGINT PRIMARY KEY
+    full_name VARCHAR(100),
+    sex CHAR(1),
+    birth_date DATE,
+    oms_num BIGINT PRIMARY KEY
 );
 
 ALTER TABLE
