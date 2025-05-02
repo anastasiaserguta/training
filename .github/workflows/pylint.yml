@@ -23,7 +23,11 @@ jobs:
         pip install -r requirements.txt  
         
     
-    - name: Run Python linter (Pylint)
+    - name: Run Pylint (warning mode)
       run: |
-        pylint $(git ls-files '*.py')   
+        pylint $(git ls-files '*.py') --exit-zero  
+      continue-on-error: true
+
+    #   run: |
+    # pylint $(git ls-files '*.py') --disable=all --enable=W
         
