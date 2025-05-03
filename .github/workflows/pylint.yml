@@ -25,7 +25,7 @@ jobs:
     
     - name: Run Pylint (warning mode)
       run: |
-        pylint $(git ls-files '*.py') --exit-zero  
+        pylint $(git ls-files '*.py') --exit-zero --enable=W 
       continue-on-error: true
 
     #   run: |
