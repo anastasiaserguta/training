@@ -21,6 +21,7 @@ You can see ER diagrams and table screenshots from MySQL Workbench below:
 ![2](MySQLWorkbench/2.png)
 ![3](MySQLWorkbench/3.png)
 ![4](MySQLWorkbench/4.png)
+![5](MySQLWorkbench/5.png)
 
 ---
 
