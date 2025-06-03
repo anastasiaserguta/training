@@ -1,0 +1,5 @@
+-- NOT SUPPORTED IN MYSQL!
+
+SELECT id FROM description
+EXCEPT
+SELECT id FROM product;
