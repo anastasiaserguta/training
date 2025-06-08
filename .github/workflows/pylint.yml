@@ -1,4 +1,4 @@
-name: Python Linting
+name: Python & SQL (MySQL) Linting
 
 on: [push, pull_request]  
 
@@ -27,7 +27,11 @@ jobs:
       run: |
         pylint $(git ls-files '*.py') --exit-zero --enable=W 
       continue-on-error: true
+      
+    - name: Run SQLFluff (MySQL)
+      run: |
+        sqlfluff lint --dialect mysql $(git ls-files '*.sql')
+      continue-on-error: true
 
-    #   run: |
-    # pylint $(git ls-files '*.py') --disable=all --enable=W
+
         
